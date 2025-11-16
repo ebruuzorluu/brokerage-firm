@@ -414,6 +414,16 @@ jwt:
   expiration: 86400000  # 24 hours
 ```
 
+
+## 🐛 Deployment
+
+The application is deployed and can be accessed at:
+
+- Host: 141.144.228.239
+- Port: 8080
+- Environment: Test
+
+
 ## 🤝 Contributing
 
 1. Fork the repository
