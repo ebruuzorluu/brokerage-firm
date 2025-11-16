@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: brokerage-api
+
+  datasource:
+    url: jdbc:h2:mem:brokeragedb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: YourSuperSecretKeyForJWTTokenGenerationMustBeLongEnough123456
+  expiration: 86400000 # 24 hours
+
+server:
+  port: 8080
